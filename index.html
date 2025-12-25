@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Academy - Professional Course Training</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <h1 class="hero__title">
+                        <span class="hero__title--primary">Master Web Development</span>
+                        <span class="hero__title--secondary">From Zero to Professional</span>
+                    </h1>
+                    <p class="hero__description">
+                        Join our comprehensive web development courses and transform your career. 
+                        Learn from industry experts with hands-on projects and real-world experience.
+                    </p>
+                    <div class="hero__buttons">
+                        <button class="btn btn--primary hero__btn">View All Courses</button>
+                        <!-- <button class="btn btn--outline hero__btn" id="aboutTeacherBtn">About Teacher</button> -->
+                        <button class="btn btn--ghost hero__btn">Get Started</button>
+                    </div>
+                </div>
+                <div class="hero__visual">
+                    <div class="hero__code-window">
+                        <div class="code-window__header">
+                            <span class="code-window__dot code-window__dot--red"></span>
+                            <span class="code-window__dot code-window__dot--yellow"></span>
+                            <span class="code-window__dot code-window__dot--green"></span>
+                        </div>
+                        <div class="code-window__content">
+                            <pre><code>&lt;div class="hero"&gt;
+  &lt;h1&gt;Welcome to Web Dev&lt;/h1&gt;
+  &lt;p&gt;Build amazing websites&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span>Scroll to explore</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="courses">
+            <div class="container">
+                <div class="section__header">
+                    <h2 class="section__title">Courses I Teach</h2>
+                    <p class="section__subtitle">Comprehensive web development courses from beginner to advanced</p>
+                </div>
+
+                <div class="courses__grid">
+                    <!-- HTML & CSS Course -->
+                    <div class="course__card" data-course="html-css">
+                        <div class="course__icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="course__title">Professional HTML & CSS Web Development</h3>
+                        <p class="course__description">Foundation of web development - build stunning websites</p>
+                        <div class="course__levels">
+                            <span class="level level--beginner">Beginner</span>
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 6,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- Tailwind CSS Course -->
+                    <div class="course__card" data-course="tailwind">
+                        <div class="course__icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h3 class="course__title">Tailwind CSS</h3>
+                        <p class="course__description">Utility-first CSS framework for rapid development</p>
+                        <div class="course__levels">
+                            <span class="level level--beginner">Beginner</span>
+                            <span class="level level--intermediate">Intermediate</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>35 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 5,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- JavaScript Course -->
+                    <div class="course__card" data-course="javascript">
+                        <div class="course__icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3 class="course__title">JavaScript</h3>
+                        <p class="course__description">Master the language of the web - from basics to advanced</p>
+                        <div class="course__levels">
+                            <span class="level level--beginner">Beginner</span>
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>60 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 8,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- React JS Course -->
+                    <div class="course__card" data-course="react">
+                        <div class="course__icon">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="course__title">React JS</h3>
+                        <p class="course__description">Build modern, interactive user interfaces</p>
+                        <div class="course__levels">
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>50 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 8,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- Next JS Course -->
+                    <div class="course__card" data-course="nextjs">
+                        <div class="course__icon">
+                            <i class="fas fa-forward"></i>
+                        </div>
+                        <h3 class="course__title">Next JS</h3>
+                        <p class="course__description">Full-stack React framework for production apps</p>
+                        <div class="course__levels">
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>40 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 10,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- Svelte JS Course -->
+                    <div class="course__card" data-course="svelte">
+                        <div class="course__icon">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="course__title">Svelte JS</h3>
+                        <p class="course__description">Revolutionary framework that compiles away</p>
+                        <div class="course__levels">
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>35 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 8,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- SvelteKit Course -->
+                    <div class="course__card" data-course="sveltekit">
+                        <div class="course__icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="course__title">SvelteKit</h3>
+                        <p class="course__description">Full-stack framework built on Svelte</p>
+                        <div class="course__levels">
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>30 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 10,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- PHP Course -->
+                    <div class="course__card" data-course="php">
+                        <div class="course__icon">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <h3 class="course__title">PHP</h3>
+                        <p class="course__description">Server-side scripting for dynamic websites</p>
+                        <div class="course__levels">
+                            <span class="level level--beginner">Beginner</span>
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>55 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 10,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- Laravel Course -->
+                    <div class="course__card" data-course="laravel">
+                        <div class="course__icon">
+                            <i class="fab fa-laravel"></i>
+                        </div>
+                        <h3 class="course__title">Laravel</h3>
+                        <p class="course__description">Elegant PHP framework for web artisans</p>
+                        <div class="course__levels">
+                            <span class="level level--intermediate">Intermediate</span>
+                            <span class="level level--advanced">Advanced</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>45 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 15,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+
+                    <!-- WordPress Course -->
+                    <div class="course__card" data-course="wordpress">
+                        <div class="course__icon">
+                            <i class="fab fa-wordpress"></i>
+                        </div>
+                        <h3 class="course__title">WordPress CMS</h3>
+                        <p class="course__description">Create websites and blogs with the world's most popular CMS</p>
+                        <div class="course__levels">
+                            <span class="level level--beginner">Beginner</span>
+                            <span class="level level--intermediate">Intermediate</span>
+                        </div>
+                        <div class="course__duration">
+                            <i class="fas fa-clock"></i>
+                            <span>35 days</span>
+                        </div>
+                        <div class="course__price">
+                            <i class="fas fa-tag"></i>
+                            <span>PKR 14,000</span>
+                        </div>
+                        <button class="btn btn--outline course__btn">View Course Outline</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Course Modal -->
+    <div id="courseModal" class="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 id="modalTitle" class="modal__title"></h2>
+                <button class="modal__close">&times;</button>
+            </div>
+            <div id="modalBody" class="modal__body"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
