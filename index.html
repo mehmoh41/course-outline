@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
     <main>
         <!-- Hero Section -->
@@ -21,7 +23,7 @@
                         <span class="hero__title--secondary">From Zero to Professional</span>
                     </h1>
                     <p class="hero__description">
-                        Join our comprehensive web development courses and transform your career. 
+                        Join our comprehensive web development courses and transform your career.
                         Learn from industry experts with hands-on projects and real-world experience.
                     </p>
                     <div class="hero__buttons">
@@ -57,230 +59,400 @@
             <div class="container">
                 <div class="section__header">
                     <h2 class="section__title">Courses I Teach</h2>
-                    <p class="section__subtitle">Comprehensive web development courses from beginner to advanced</p>
+                    <p class="section__subtitle">Comprehensive courses from beginner to advanced - Choose your learning
+                        path</p>
                 </div>
 
-                <div class="courses__grid">
-                    <!-- HTML & CSS Course -->
-                    <div class="course__card" data-course="html-css">
-                        <div class="course__icon">
-                            <i class="fab fa-html5"></i>
+                <!-- Tab Navigation -->
+                <div class="courses__tabs">
+                    <button class="tab__btn tab__btn--active" data-tab="frontend">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Frontend Development</span>
+                    </button>
+                    <button class="tab__btn" data-tab="backend">
+                        <i class="fas fa-server"></i>
+                        <span>Backend Development</span>
+                    </button>
+                    <button class="tab__btn" data-tab="ai">
+                        <i class="fas fa-brain"></i>
+                        <span>AI & Machine Learning</span>
+                    </button>
+                </div>
+
+                <!-- Tab Content -->
+                <div class="courses__tab-content">
+                    <!-- Frontend Courses -->
+                    <div class="tab__panel tab__panel--active" id="frontend">
+                        <div class="tab__panel-header">
+                            <div class="tab__panel-icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="tab__panel-info">
+                                <h3>Frontend Development Track</h3>
+                                <p>Master the art of building beautiful, responsive, and interactive user interfaces</p>
+                            </div>
                         </div>
-                        <h3 class="course__title">Professional HTML & CSS Web Development</h3>
-                        <p class="course__description">Foundation of web development - build stunning websites</p>
-                        <div class="course__levels">
-                            <span class="level level--beginner">Beginner</span>
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
+                        <div class="courses__grid">
+                            <!-- HTML & CSS Course -->
+                            <div class="course__card" data-course="html-css">
+                                <div class="course__badge">Foundation</div>
+                                <div class="course__icon course__icon--html">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <h3 class="course__title">Professional HTML & CSS</h3>
+                                <p class="course__description">Build stunning, responsive websites from scratch</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--beginner">Beginner</span>
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>45 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 6,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- Tailwind CSS Course -->
+                            <div class="course__card" data-course="tailwind">
+                                <div class="course__badge course__badge--popular">Popular</div>
+                                <div class="course__icon course__icon--tailwind">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <h3 class="course__title">Tailwind CSS</h3>
+                                <p class="course__description">Utility-first CSS framework for rapid development</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--beginner">Beginner</span>
+                                        <span class="level level--intermediate">Intermediate</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>35 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 5,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- JavaScript Course -->
+                            <div class="course__card" data-course="javascript">
+                                <div class="course__badge course__badge--essential">Essential</div>
+                                <div class="course__icon course__icon--js">
+                                    <i class="fab fa-js-square"></i>
+                                </div>
+                                <h3 class="course__title">JavaScript Mastery</h3>
+                                <p class="course__description">Master the language of the web - from basics to advanced
+                                </p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--beginner">Beginner</span>
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>60 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 8,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- React JS Course -->
+                            <div class="course__card" data-course="react">
+                                <div class="course__badge course__badge--hot">Hot</div>
+                                <div class="course__icon course__icon--react">
+                                    <i class="fab fa-react"></i>
+                                </div>
+                                <h3 class="course__title">React JS</h3>
+                                <p class="course__description">Build modern, interactive user interfaces</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>50 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 8,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- Next JS Course -->
+                            <div class="course__card" data-course="nextjs">
+                                <div class="course__badge course__badge--advanced">Pro</div>
+                                <div class="course__icon course__icon--next">
+                                    <i class="fas fa-forward"></i>
+                                </div>
+                                <h3 class="course__title">Next.js</h3>
+                                <p class="course__description">Full-stack React framework for production apps</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>40 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 10,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- Svelte JS Course -->
+                            <div class="course__card" data-course="svelte">
+                                <div class="course__badge course__badge--new">New</div>
+                                <div class="course__icon course__icon--svelte">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <h3 class="course__title">Svelte JS</h3>
+                                <p class="course__description">Revolutionary framework that compiles away</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>35 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 8,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- SvelteKit Course -->
+                            <div class="course__card" data-course="sveltekit">
+                                <div class="course__badge course__badge--advanced">Pro</div>
+                                <div class="course__icon course__icon--sveltekit">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <h3 class="course__title">SvelteKit</h3>
+                                <p class="course__description">Full-stack framework built on Svelte</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>30 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 10,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
                         </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>45 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 6,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
                     </div>
 
-                    <!-- Tailwind CSS Course -->
-                    <div class="course__card" data-course="tailwind">
-                        <div class="course__icon">
-                            <i class="fas fa-wind"></i>
+                    <!-- Backend Courses -->
+                    <div class="tab__panel" id="backend">
+                        <div class="tab__panel-header">
+                            <div class="tab__panel-icon tab__panel-icon--backend">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="tab__panel-info">
+                                <h3>Backend Development Track</h3>
+                                <p>Build powerful server-side applications and APIs with modern technologies</p>
+                            </div>
                         </div>
-                        <h3 class="course__title">Tailwind CSS</h3>
-                        <p class="course__description">Utility-first CSS framework for rapid development</p>
-                        <div class="course__levels">
-                            <span class="level level--beginner">Beginner</span>
-                            <span class="level level--intermediate">Intermediate</span>
+                        <div class="courses__grid">
+                            <!-- PHP Course -->
+                            <div class="course__card" data-course="php">
+                                <div class="course__badge">Foundation</div>
+                                <div class="course__icon course__icon--php">
+                                    <i class="fab fa-php"></i>
+                                </div>
+                                <h3 class="course__title">PHP Development</h3>
+                                <p class="course__description">Server-side scripting for dynamic websites</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--beginner">Beginner</span>
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>55 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 10,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- Laravel Course -->
+                            <div class="course__card" data-course="laravel">
+                                <div class="course__badge course__badge--popular">Popular</div>
+                                <div class="course__icon course__icon--laravel">
+                                    <i class="fab fa-laravel"></i>
+                                </div>
+                                <h3 class="course__title">Laravel Framework</h3>
+                                <p class="course__description">Elegant PHP framework for web artisans</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>45 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 15,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
+
+                            <!-- WordPress Course -->
+                            <div class="course__card" data-course="wordpress">
+                                <div class="course__badge course__badge--essential">Essential</div>
+                                <div class="course__icon course__icon--wordpress">
+                                    <i class="fab fa-wordpress"></i>
+                                </div>
+                                <h3 class="course__title">WordPress CMS</h3>
+                                <p class="course__description">Create websites and blogs with the world's most popular
+                                    CMS</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--beginner">Beginner</span>
+                                        <span class="level level--intermediate">Intermediate</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>35 days</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>PKR 14,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
                         </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>35 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 5,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
                     </div>
 
-                    <!-- JavaScript Course -->
-                    <div class="course__card" data-course="javascript">
-                        <div class="course__icon">
-                            <i class="fab fa-js-square"></i>
+                    <!-- AI Courses -->
+                    <div class="tab__panel" id="ai">
+                        <div class="tab__panel-header">
+                            <div class="tab__panel-icon tab__panel-icon--ai">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="tab__panel-info">
+                                <h3>AI & Machine Learning Track</h3>
+                                <p>Dive into the future of technology with artificial intelligence and machine learning
+                                </p>
+                            </div>
                         </div>
-                        <h3 class="course__title">JavaScript</h3>
-                        <p class="course__description">Master the language of the web - from basics to advanced</p>
-                        <div class="course__levels">
-                            <span class="level level--beginner">Beginner</span>
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>60 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 8,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
+                        <div class="courses__grid">
+                            <!-- Generative AI Course -->
+                            <div class="course__card" data-course="generative-ai">
+                                <div class="course__badge course__badge--hot">Hot</div>
+                                <div class="course__icon course__icon--ai">
+                                    <i class="fas fa-wand-magic-sparkles"></i>
+                                </div>
+                                <h3 class="course__title">Generative AI</h3>
+                                <p class="course__description">Create intelligent content using cutting-edge AI models
+                                    like GPT, DALL-E, and more</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--beginner">Beginner</span>
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>To be announced</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>To be announced</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
 
-                    <!-- React JS Course -->
-                    <div class="course__card" data-course="react">
-                        <div class="course__icon">
-                            <i class="fab fa-react"></i>
+                            <!-- Chatbot Development Course -->
+                            <div class="course__card" data-course="chatbot">
+                                <div class="course__badge course__badge--new">New</div>
+                                <div class="course__icon course__icon--chatbot">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h3 class="course__title">Chatbot Development</h3>
+                                <p class="course__description">Build intelligent conversational agents and virtual
+                                    assistants</p>
+                                <div class="course__meta">
+                                    <div class="course__levels">
+                                        <span class="level level--intermediate">Intermediate</span>
+                                        <span class="level level--advanced">Advanced</span>
+                                    </div>
+                                    <div class="course__info-row">
+                                        <div class="course__duration">
+                                            <i class="fas fa-clock"></i>
+                                            <span>To be announced</span>
+                                        </div>
+                                        <div class="course__price">
+                                            <i class="fas fa-tag"></i>
+                                            <span>To be announced</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="btn btn--outline course__btn">View Course Outline</button>
+                            </div>
                         </div>
-                        <h3 class="course__title">React JS</h3>
-                        <p class="course__description">Build modern, interactive user interfaces</p>
-                        <div class="course__levels">
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>50 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 8,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
-
-                    <!-- Next JS Course -->
-                    <div class="course__card" data-course="nextjs">
-                        <div class="course__icon">
-                            <i class="fas fa-forward"></i>
-                        </div>
-                        <h3 class="course__title">Next JS</h3>
-                        <p class="course__description">Full-stack React framework for production apps</p>
-                        <div class="course__levels">
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>40 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 10,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
-
-                    <!-- Svelte JS Course -->
-                    <div class="course__card" data-course="svelte">
-                        <div class="course__icon">
-                            <i class="fas fa-fire"></i>
-                        </div>
-                        <h3 class="course__title">Svelte JS</h3>
-                        <p class="course__description">Revolutionary framework that compiles away</p>
-                        <div class="course__levels">
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>35 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 8,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
-
-                    <!-- SvelteKit Course -->
-                    <div class="course__card" data-course="sveltekit">
-                        <div class="course__icon">
-                            <i class="fas fa-rocket"></i>
-                        </div>
-                        <h3 class="course__title">SvelteKit</h3>
-                        <p class="course__description">Full-stack framework built on Svelte</p>
-                        <div class="course__levels">
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>30 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 10,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
-
-                    <!-- PHP Course -->
-                    <div class="course__card" data-course="php">
-                        <div class="course__icon">
-                            <i class="fab fa-php"></i>
-                        </div>
-                        <h3 class="course__title">PHP</h3>
-                        <p class="course__description">Server-side scripting for dynamic websites</p>
-                        <div class="course__levels">
-                            <span class="level level--beginner">Beginner</span>
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>55 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 10,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
-
-                    <!-- Laravel Course -->
-                    <div class="course__card" data-course="laravel">
-                        <div class="course__icon">
-                            <i class="fab fa-laravel"></i>
-                        </div>
-                        <h3 class="course__title">Laravel</h3>
-                        <p class="course__description">Elegant PHP framework for web artisans</p>
-                        <div class="course__levels">
-                            <span class="level level--intermediate">Intermediate</span>
-                            <span class="level level--advanced">Advanced</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>45 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 15,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
-                    </div>
-
-                    <!-- WordPress Course -->
-                    <div class="course__card" data-course="wordpress">
-                        <div class="course__icon">
-                            <i class="fab fa-wordpress"></i>
-                        </div>
-                        <h3 class="course__title">WordPress CMS</h3>
-                        <p class="course__description">Create websites and blogs with the world's most popular CMS</p>
-                        <div class="course__levels">
-                            <span class="level level--beginner">Beginner</span>
-                            <span class="level level--intermediate">Intermediate</span>
-                        </div>
-                        <div class="course__duration">
-                            <i class="fas fa-clock"></i>
-                            <span>35 days</span>
-                        </div>
-                        <div class="course__price">
-                            <i class="fas fa-tag"></i>
-                            <span>PKR 14,000</span>
-                        </div>
-                        <button class="btn btn--outline course__btn">View Course Outline</button>
                     </div>
                 </div>
             </div>
@@ -300,4 +472,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>

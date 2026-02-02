@@ -1012,6 +1012,108 @@ const courseOutlines = {
                 </ul>
             </div>
         `
+    },
+    'generative-ai': {
+        title: 'Generative AI Mastery',
+        duration: '45 days',
+        levels: 'Beginner → Intermediate → Advanced',
+        description: 'Master the art of Generative AI. Learn to work with Large Language Models (LLMs), create AI-powered applications, and understand the future of artificial intelligence.',
+        prerequisites: `
+            <div class="prerequisites-section">
+                <h4>📋 Prerequisites</h4>
+                <ul>
+                    <li>Basic programming knowledge (Python preferred)</li>
+                    <li>Understanding of basic mathematics and statistics</li>
+                    <li>Familiarity with web development concepts (helpful but not required)</li>
+                    <li>Interest in AI and machine learning</li>
+                </ul>
+            </div>
+        `,
+        outline: `
+            <div class="course-outline">
+                <h3>🎯 Course Overview</h3>
+                <p>Master the art of Generative AI. Learn to work with Large Language Models (LLMs), create AI-powered applications, and understand the future of artificial intelligence.</p>
+                
+                <div class="prerequisites-section">
+                    <h4>📋 Prerequisites</h4>
+                    <ul>
+                        <li>Basic programming knowledge (Python preferred)</li>
+                        <li>Understanding of basic mathematics and statistics</li>
+                        <li>Familiarity with web development concepts (helpful but not required)</li>
+                        <li>Interest in AI and machine learning</li>
+                    </ul>
+                </div>
+                
+                <div class="coming-soon-section" style="text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 16px; margin: 30px 0;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">🚀</div>
+                    <h3 style="color: #1e293b; font-size: 1.75rem; margin-bottom: 15px;">We're Preparing the Best Course Outline for You!</h3>
+                    <p style="color: #64748b; font-size: 1.1rem; max-width: 500px; margin: 0 auto 25px;">Our expert instructors are crafting a comprehensive curriculum that will take you from beginner to AI expert. Stay tuned!</p>
+                    <div style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #9333ea, #7c3aed); color: white; border-radius: 30px; font-weight: 600;">Coming Soon</div>
+                </div>
+                
+                <h3>💡 What You'll Learn</h3>
+                <ul>
+                    <li>Deep understanding of how LLMs work</li>
+                    <li>Expert-level prompt engineering skills</li>
+                    <li>Building production-grade AI applications</li>
+                    <li>Working with multiple AI providers (OpenAI, Anthropic, Google)</li>
+                    <li>Implementing RAG and vector search</li>
+                    <li>AI safety and responsible development</li>
+                </ul>
+            </div>
+        `
+    },
+    'chatbot': {
+        title: 'Chatbot Development Mastery',
+        duration: '40 days',
+        levels: 'Intermediate → Advanced',
+        description: 'Learn to build intelligent conversational agents and virtual assistants. From simple rule-based bots to AI-powered conversational systems using modern NLP techniques.',
+        prerequisites: `
+            <div class="prerequisites-section">
+                <h4>📋 Prerequisites</h4>
+                <ul>
+                    <li>Basic HTML & CSS knowledge</li>
+                    <li>Basic JavaScript understanding</li>
+                    <li>Familiarity with how websites work</li>
+                    <li>Basic computer skills and internet navigation</li>
+                    <li>Willingness to learn new technologies</li>
+                </ul>
+            </div>
+        `,
+        outline: `
+            <div class="course-outline">
+                <h3>🎯 Course Overview</h3>
+                <p>Comprehensive course on building modern chatbots and conversational AI systems. Learn to create intelligent assistants that understand natural language, maintain context, and provide helpful responses.</p>
+                
+                <div class="prerequisites-section">
+                    <h4>📋 Prerequisites</h4>
+                    <ul>
+                        <li>Basic HTML & CSS knowledge</li>
+                        <li>Basic JavaScript understanding</li>
+                        <li>Familiarity with how websites work</li>
+                        <li>Basic computer skills and internet navigation</li>
+                        <li>Willingness to learn new technologies</li>
+                    </ul>
+                </div>
+                
+                <div class="coming-soon-section" style="text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #f0fdfa, #ccfbf1); border-radius: 16px; margin: 30px 0;">
+                    <div style="font-size: 4rem; margin-bottom: 20px;">🤖</div>
+                    <h3 style="color: #134e4a; font-size: 1.75rem; margin-bottom: 15px;">We're Preparing the Best Course Outline for You!</h3>
+                    <p style="color: #5eead4; font-size: 1.1rem; max-width: 500px; margin: 0 auto 25px;">Our expert instructors are crafting a comprehensive curriculum that will make you a chatbot development expert. Stay tuned!</p>
+                    <div style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #06b6d4, #14b8a6); color: white; border-radius: 30px; font-weight: 600;">Coming Soon</div>
+                </div>
+                
+                <h3>💡 What You'll Learn</h3>
+                <ul>
+                    <li>Design effective conversational experiences</li>
+                    <li>Build AI-powered intelligent chatbots</li>
+                    <li>Implement NLP for natural conversations</li>
+                    <li>Deploy to multiple messaging platforms (WhatsApp, Telegram, etc.)</li>
+                    <li>Track and analyze chatbot performance</li>
+                    <li>Scale chatbots for production usage</li>
+                </ul>
+            </div>
+        `
     }
 };
 
@@ -1064,6 +1166,33 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// Tab Navigation Functionality
+const tabButtons = document.querySelectorAll('.tab__btn');
+const tabPanels = document.querySelectorAll('.tab__panel');
+
+function switchTab(tabId) {
+    // Remove active class from all tabs and panels
+    tabButtons.forEach(btn => btn.classList.remove('tab__btn--active'));
+    tabPanels.forEach(panel => panel.classList.remove('tab__panel--active'));
+
+    // Add active class to selected tab and panel
+    const selectedButton = document.querySelector(`[data-tab="${tabId}"]`);
+    const selectedPanel = document.getElementById(tabId);
+
+    if (selectedButton && selectedPanel) {
+        selectedButton.classList.add('tab__btn--active');
+        selectedPanel.classList.add('tab__panel--active');
+    }
+}
+
+// Tab button click handlers
+tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        const tabId = button.dataset.tab;
+        switchTab(tabId);
+    });
+});
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -1079,11 +1208,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Hero section button functionality
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // View All Courses button
     const viewCoursesBtn = document.querySelector('.hero__btn.btn--primary');
     if (viewCoursesBtn) {
-        viewCoursesBtn.addEventListener('click', function() {
+        viewCoursesBtn.addEventListener('click', function () {
             document.getElementById('courses').scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -1094,7 +1223,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // About Teacher button
     const aboutTeacherBtn = document.getElementById('aboutTeacherBtn');
     if (aboutTeacherBtn) {
-        aboutTeacherBtn.addEventListener('click', function() {
+        aboutTeacherBtn.addEventListener('click', function () {
             // Create and show teacher modal
             const teacherModal = document.createElement('div');
             teacherModal.className = 'modal';
@@ -1137,23 +1266,23 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
                 </div>
             `;
-            
+
             document.body.appendChild(teacherModal);
-            
+
             // Close modal functionality
             const closeBtn = teacherModal.querySelector('.modal__close');
-            closeBtn.addEventListener('click', function() {
+            closeBtn.addEventListener('click', function () {
                 teacherModal.remove();
             });
-            
-            teacherModal.addEventListener('click', function(e) {
+
+            teacherModal.addEventListener('click', function (e) {
                 if (e.target === teacherModal) {
                     teacherModal.remove();
                 }
             });
-            
+
             // Add ESC key support
-            document.addEventListener('keydown', function(e) {
+            document.addEventListener('keydown', function (e) {
                 if (e.key === 'Escape') {
                     teacherModal.remove();
                 }
@@ -1164,7 +1293,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get Started button
     const getStartedBtn = document.querySelector('.hero__btn.btn--ghost');
     if (getStartedBtn) {
-        getStartedBtn.addEventListener('click', function() {
+        getStartedBtn.addEventListener('click', function () {
             document.getElementById('courses').scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -1175,7 +1304,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Scroll indicator functionality
     const scrollIndicator = document.querySelector('.hero__scroll-indicator');
     if (scrollIndicator) {
-        scrollIndicator.addEventListener('click', function() {
+        scrollIndicator.addEventListener('click', function () {
             document.getElementById('courses').scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
