@@ -1014,17 +1014,16 @@ const courseOutlines = {
         `
     },
     'generative-ai': {
-        title: 'Generative AI Mastery',
+        title: 'Generative AI – Beginner to Intermediate',
         duration: '45 days',
-        levels: 'Beginner → Intermediate → Advanced',
-        description: 'Master the art of Generative AI. Learn to work with Large Language Models (LLMs), create AI-powered applications, and understand the future of artificial intelligence.',
+        levels: 'Beginner → Intermediate',
+        description: 'Master Generative AI from fundamentals to practical applications. Learn about LLMs, prompt engineering, AI APIs, text and image generation, and build your own AI-powered projects.',
         prerequisites: `
             <div class="prerequisites-section">
                 <h4>📋 Prerequisites</h4>
                 <ul>
-                    <li>Basic programming knowledge (Python preferred)</li>
-                    <li>Understanding of basic mathematics and statistics</li>
-                    <li>Familiarity with web development concepts (helpful but not required)</li>
+                    <li>Basic computer skills and internet navigation</li>
+                    <li>Willingness to learn new technologies</li>
                     <li>Interest in AI and machine learning</li>
                 </ul>
             </div>
@@ -1032,42 +1031,129 @@ const courseOutlines = {
         outline: `
             <div class="course-outline">
                 <h3>🎯 Course Overview</h3>
-                <p>Master the art of Generative AI. Learn to work with Large Language Models (LLMs), create AI-powered applications, and understand the future of artificial intelligence.</p>
+                <p>Comprehensive course covering Generative AI from basics to practical applications. Learn about AI fundamentals, prompt engineering, text and image generation, and build real-world AI-powered projects.</p>
                 
                 <div class="prerequisites-section">
                     <h4>📋 Prerequisites</h4>
                     <ul>
-                        <li>Basic programming knowledge (Python preferred)</li>
-                        <li>Understanding of basic mathematics and statistics</li>
-                        <li>Familiarity with web development concepts (helpful but not required)</li>
+                        <li>Basic computer skills and internet navigation</li>
+                        <li>Willingness to learn new technologies</li>
                         <li>Interest in AI and machine learning</li>
                     </ul>
                 </div>
                 
-                <div class="coming-soon-section" style="text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #f8fafc, #e2e8f0); border-radius: 16px; margin: 30px 0;">
-                    <div style="font-size: 4rem; margin-bottom: 20px;">🚀</div>
-                    <h3 style="color: #1e293b; font-size: 1.75rem; margin-bottom: 15px;">We're Preparing the Best Course Outline for You!</h3>
-                    <p style="color: #64748b; font-size: 1.1rem; max-width: 500px; margin: 0 auto 25px;">Our expert instructors are crafting a comprehensive curriculum that will take you from beginner to AI expert. Stay tuned!</p>
-                    <div style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #9333ea, #7c3aed); color: white; border-radius: 30px; font-weight: 600;">Coming Soon</div>
+                <h3>📚 Module 1: Introduction to Generative AI</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>What is Artificial Intelligence?</li>
+                        <li>Difference between AI, ML, Deep Learning, and Generative AI</li>
+                        <li>Real-world examples (text, images, audio, video)</li>
+                        <li>Use cases in business, education, and software</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 2: Foundations of Generative Models</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>What is a model and how it learns</li>
+                        <li>Tokens, embeddings, and probabilities (conceptual)</li>
+                        <li>Overview of Large Language Models (LLMs)</li>
+                        <li>Overview of Diffusion models (images)</li>
+                        <li>Understanding datasets and training basics</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 3: Prompt Engineering Basics</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>What is a prompt?</li>
+                        <li>Prompt structure (role, task, context, format)</li>
+                        <li>Zero-shot, one-shot, and few-shot prompting</li>
+                        <li>Common mistakes in prompts</li>
+                        <li>Prompt optimization techniques</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 4: Text Generation with LLMs</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Text completion and chat-based models</li>
+                        <li>Content generation: Blogs, emails, product descriptions</li>
+                        <li>Code generation basics</li>
+                        <li>Controlling tone, style, and length</li>
+                        <li>Handling hallucinations and inaccuracies</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 5: Image & Media Generation (Overview)</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>How AI generates images (high-level)</li>
+                        <li>Text-to-image concepts</li>
+                        <li>Image prompt basics</li>
+                        <li>Ethical use of generated media</li>
+                        <li>Practical examples (logos, posters, ads)</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 6: Working with AI APIs</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>What is an API?</li>
+                        <li>Overview of popular AI APIs (conceptual)</li>
+                        <li>API keys and security basics</li>
+                        <li>Sending prompts via API</li>
+                        <li>Understanding responses and parameters</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 7: Practical Generative AI Use Cases</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>AI for marketing and content creation</li>
+                        <li>AI for productivity and automation</li>
+                        <li>AI in customer support</li>
+                        <li>AI-powered internal tools</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 8: Ethics, Limitations & Best Practices</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Bias and fairness in AI</li>
+                        <li>Data privacy concerns</li>
+                        <li>Responsible AI usage</li>
+                        <li>Legal and copyright basics</li>
+                        <li>Future trends in Generative AI</li>
+                    </ul>
+                </div>
+                
+                <h3>🛠️ Module 9: Mini Project</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Build a simple AI-powered content generator</li>
+                        <li>Prompt-based automation</li>
+                        <li>Improve outputs through prompt iteration</li>
+                    </ul>
                 </div>
                 
                 <h3>💡 What You'll Learn</h3>
                 <ul>
-                    <li>Deep understanding of how LLMs work</li>
+                    <li>Deep understanding of how LLMs and Generative AI work</li>
                     <li>Expert-level prompt engineering skills</li>
-                    <li>Building production-grade AI applications</li>
-                    <li>Working with multiple AI providers (OpenAI, Anthropic, Google)</li>
-                    <li>Implementing RAG and vector search</li>
-                    <li>AI safety and responsible development</li>
+                    <li>Working with AI APIs and building applications</li>
+                    <li>Text and image generation techniques</li>
+                    <li>AI ethics and responsible development</li>
+                    <li>Building your own AI-powered projects</li>
                 </ul>
             </div>
         `
     },
     'chatbot': {
-        title: 'Chatbot Development Mastery',
-        duration: '40 days',
-        levels: 'Intermediate → Advanced',
-        description: 'Learn to build intelligent conversational agents and virtual assistants. From simple rule-based bots to AI-powered conversational systems using modern NLP techniques.',
+        title: 'Chatbot Development – Beginner to Intermediate',
+        duration: '50 days',
+        levels: 'Beginner → Intermediate',
+        description: 'Learn to build intelligent conversational agents and virtual assistants. From simple rule-based bots to AI-powered conversational systems using modern NLP techniques and LLMs.',
         prerequisites: `
             <div class="prerequisites-section">
                 <h4>📋 Prerequisites</h4>
@@ -1096,21 +1182,126 @@ const courseOutlines = {
                     </ul>
                 </div>
                 
-                <div class="coming-soon-section" style="text-align: center; padding: 60px 20px; background: linear-gradient(135deg, #f0fdfa, #ccfbf1); border-radius: 16px; margin: 30px 0;">
-                    <div style="font-size: 4rem; margin-bottom: 20px;">🤖</div>
-                    <h3 style="color: #134e4a; font-size: 1.75rem; margin-bottom: 15px;">We're Preparing the Best Course Outline for You!</h3>
-                    <p style="color: #5eead4; font-size: 1.1rem; max-width: 500px; margin: 0 auto 25px;">Our expert instructors are crafting a comprehensive curriculum that will make you a chatbot development expert. Stay tuned!</p>
-                    <div style="display: inline-block; padding: 12px 30px; background: linear-gradient(135deg, #06b6d4, #14b8a6); color: white; border-radius: 30px; font-weight: 600;">Coming Soon</div>
+                <h3>📚 Module 1: Introduction to Chatbots</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>What is a chatbot?</li>
+                        <li>Types of chatbots: Rule-based vs AI-powered</li>
+                        <li>Chatbot use cases in businesses</li>
+                        <li>Examples of popular chatbots</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 2: Chatbot Fundamentals</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Conversation flow basics</li>
+                        <li>Intents, entities, and responses</li>
+                        <li>Context and session management</li>
+                        <li>Designing natural conversations</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 3: Rule-Based Chatbots</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Flow-based chatbot design</li>
+                        <li>Decision trees</li>
+                        <li>Keywords and pattern matching</li>
+                        <li>When to use rule-based bots</li>
+                        <li>Simple chatbot logic implementation</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 4: AI-Powered Chatbots</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Introduction to NLP for chatbots</li>
+                        <li>Using LLMs for conversations</li>
+                        <li>Prompt-based chatbot design</li>
+                        <li>Handling user intent using AI</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 5: Building Your First AI Chatbot</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Chatbot architecture overview</li>
+                        <li>Backend basics (API-based chatbot)</li>
+                        <li>Sending user messages to AI models</li>
+                        <li>Receiving and displaying responses</li>
+                        <li>Error handling and fallbacks</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 6: Context & Memory in Chatbots</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Short-term vs long-term memory</li>
+                        <li>Maintaining conversation history</li>
+                        <li>Role-based system prompts</li>
+                        <li>Managing follow-up questions</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 7: Chatbot Integration</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Web chatbot integration</li>
+                        <li>Mobile app integration (overview)</li>
+                        <li>Connecting chatbot with databases</li>
+                        <li>Fetching dynamic data (products, orders, FAQs)</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 8: Chatbots for Business Use Cases</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Customer support chatbot</li>
+                        <li>Sales and lead-generation bot</li>
+                        <li>Internal tools chatbot</li>
+                        <li>AI assistant for apps and websites</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 9: Testing & Improving Chatbots</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Testing conversation flows</li>
+                        <li>Handling edge cases</li>
+                        <li>Reducing wrong or irrelevant responses</li>
+                        <li>Improving UX and response quality</li>
+                    </ul>
+                </div>
+                
+                <h3>📚 Module 10: Deployment & Maintenance</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Hosting chatbot backend</li>
+                        <li>API usage and cost control</li>
+                        <li>Monitoring performance</li>
+                        <li>Updating prompts and flows</li>
+                    </ul>
+                </div>
+                
+                <h3>🛠️ Module 11: Final Project</h3>
+                <div class="outline-section">
+                    <ul>
+                        <li>Build a complete chatbot (FAQ / Support / Business assistant)</li>
+                        <li>Add context awareness</li>
+                        <li>Connect chatbot with real data</li>
+                        <li>Improve conversation quality</li>
+                    </ul>
                 </div>
                 
                 <h3>💡 What You'll Learn</h3>
                 <ul>
                     <li>Design effective conversational experiences</li>
-                    <li>Build AI-powered intelligent chatbots</li>
-                    <li>Implement NLP for natural conversations</li>
-                    <li>Deploy to multiple messaging platforms (WhatsApp, Telegram, etc.)</li>
+                    <li>Build both rule-based and AI-powered intelligent chatbots</li>
+                    <li>Implement NLP and LLMs for natural conversations</li>
+                    <li>Integrate chatbots with websites and apps</li>
                     <li>Track and analyze chatbot performance</li>
-                    <li>Scale chatbots for production usage</li>
+                    <li>Deploy and maintain production chatbots</li>
                 </ul>
             </div>
         `
